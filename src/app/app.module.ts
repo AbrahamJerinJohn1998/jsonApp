@@ -11,7 +11,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { UserDataComponent } from './user-data/user-data.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ViewTodoComponent } from './view-todo/view-todo.component'
+import { ViewTodoComponent } from './view-todo/view-todo.component';
+import { ViewQuotesComponent } from './view-quotes/view-quotes.component'
 const myRoute:Routes=[
   {
     path:"",
@@ -36,6 +37,10 @@ const myRoute:Routes=[
   {
     path:"viewtodo",
     component:ViewTodoComponent
+  },
+  {
+    path:"viewquotes",
+    component:ViewQuotesComponent
   }
 ]
 @NgModule({
@@ -47,7 +52,8 @@ const myRoute:Routes=[
     ViewProductListComponent,
     NavbarComponent,
     UserDataComponent,
-    ViewTodoComponent
+    ViewTodoComponent,
+    ViewQuotesComponent
   ],
   imports: [
     BrowserModule,
