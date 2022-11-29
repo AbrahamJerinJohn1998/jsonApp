@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table mt-4">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">First Nmae</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Maiden Name</th>
+                    <th scope="col">Age</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of data.users">
+                    <th>{{i["id"]}}</th>
+                    <td>{{i["firstName"]}}</td>
+                    <td>{{i["lastName"]}}</td>
+                    <td>{{i["maidenName"]}}</td>
+                    <td>{{i["age"]}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>

@@ -9,6 +9,8 @@ import { ViewUserInfoComponent } from './view-user-info/view-user-info.component
 import { ViewProductListComponent } from './view-product-list/view-product-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
+import { UserDataComponent } from './user-data/user-data.component';
+import { HttpClientModule } from '@angular/common/http'
 const myRoute:Routes=[
   {
     path:"",
@@ -25,6 +27,10 @@ const myRoute:Routes=[
   {
     path:"viewproductlist",
     component:ViewProductListComponent
+  },
+  {
+    path:"viewuserdata",
+    component:UserDataComponent
   }
 ]
 @NgModule({
@@ -34,12 +40,14 @@ const myRoute:Routes=[
     ViewUsPublicdataComponent,
     ViewUserInfoComponent,
     ViewProductListComponent,
-    NavbarComponent
+    NavbarComponent,
+    UserDataComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
