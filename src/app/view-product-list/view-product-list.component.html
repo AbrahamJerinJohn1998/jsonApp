@@ -1,24 +1,24 @@
+<app-navbar></app-navbar>
 <div class="container">
     <div class="row g-3">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
             <div class="row g-3 mt-4" >
 
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" *ngFor="let i of data">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6" *ngFor="let i of data.products">
                     
-                    <img height="400px" width="350px" src="{{i.images}}" class="card-img-top" alt="...">
+                    <img height="400px" width="1px" src="{{i.thumbnail}}" class="card-img-top" alt="...">
 
                     <div class="card">
                         <div  class="card-body">
-                          <p class="card-text">{{i.id}}</p>
-                          <p class="card-text">{{i.title}}</p>
-                          <p class="card-text">{{i.description}}</p>
-                          <p class="card-text">{{i.price}}</p>
-                          <p class="card-text">{{i.discountPercentage}}</p>
-                          <p class="card-text">{{i.rating}}</p>
-                          <p class="card-text">{{i.stock}}</p>
-                          <p class="card-text">{{i.brand}}</p>
-                          <p class="card-text">{{i.thumbnail}}</p>
+                          <p class="card-text">Id: {{i.id}}</p>
+                          <p class="card-text">Title: {{i.title}}</p>
+                          <p class="card-text">Description: {{i.description}}</p>
+                          <p class="card-text">Price: {{i.price}}</p>
+                          <p class="card-text">Discount Percentage: {{i.discountPercentage}}</p>
+                          <p class="card-text">Rating: {{i.rating}}</p>
+                          <p class="card-text">Stock: {{i.stock}}</p>
+                          <p class="card-text">Brand: {{i.brand}}</p>
                         </div>
                       </div>
                 </div> 
