@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ViewPassengerComponent } from './view-passenger/view-passenger.component';
 import { ViewUsPublicdataComponent } from './view-us-publicdata/view-us-publicdata.component';
 import { ViewPublicAPIlinksdataComponent } from './view-public-apilinksdata/view-public-apilinksdata.component';
+import { ViewUserInfoComponent } from './view-user-info/view-user-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ViewPassengerComponent,
     ViewUsPublicdataComponent,
-    ViewPublicAPIlinksdataComponent
+    ViewPublicAPIlinksdataComponent,
+    ViewUserInfoComponent
   ],
   imports: [
     BrowserModule,
