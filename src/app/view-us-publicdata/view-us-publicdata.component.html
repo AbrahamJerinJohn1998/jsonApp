@@ -1,42 +1,27 @@
 <app-navbar></app-navbar>
-
 <div class="container">
-
     <div class="row">
-
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-
-            <div class="row g-3 mt-4">
-
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor= "let i of data">
-
-                    <div class="card" height="400px">
-
-                        <div class="card-body">
-
-                          <h5 class="card-title">{{i.Id}} </h5>
-
-                          <p class="card-text">{{i.Nation}}</p>
-
-                          <p class="card-text">{{i.Id Year}}</p>
-
-                          <p class="card-text">{{i.Year}}</p>
-
-                          <p class="card-text">{{i.Population}}</p>
-
-                          <p class="card-text">{{i.Slug Nation}}</p>
-
-                        </div>
-
-                      </div>
-
-                </div>
-
-            </div>
-
+            <table class="table mt-4">
+                <thead>
+                  <tr>
+                    <th scope="col">Nation</th>
+                    <th scope="col">ID Year</th>
+                    <th scope="col">Year</th>
+                    <th scope="col">Population</th>
+                    <th scope="col">Slug Nation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of data.data">
+                    <th>{{i["Nation"]}}</th>
+                    <td>{{i["ID Year"]}}</td>
+                    <td>{{i["Year"]}}</td>
+                    <td>{{i["Population"]}}</td>
+                    <td>{{i["Slug Nation"]}}</td>
+                  </tr>
+                </tbody>
+              </table>
         </div>
-
     </div>
-
 </div>
-
